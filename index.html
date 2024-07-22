@@ -4,8 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donna Luisa</title>
-    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #800000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.motto {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    width: 200%; /* Adjust based on the number of images */
+    height: 100%;
+    animation: scroll 16s linear infinite;
+}
+
+.carousel img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Change based on the width of the carousel */
+    }
+}
+
+#about, #services, #contact {
+    padding: 2em;
+    background-color: #800000;
+    margin: 1em 0;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 1%;
+    position: relative;
+}
+
+.service-overlay {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.service img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.service:hover .overlay {
+    opacity: 1;
+}
+
+#contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info, .contact-form {
+    width: 100%;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #800000;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.social-media a {
+    margin: 0 1em;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .service {
+        width: 45%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-container {
+        height: 200px;
+    }
+
+    .carousel img {
+        height: 200px;
+    }
+
+    .map {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .carousel-container {
+        height: 150px;
+    }
+
+    .carousel img {
+        height: 150px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 120px;
+    }
+
+    .carousel img {
+        height: 120px;
+    }
+
+    .map {
+        height: 200px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .motto {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about, #services, #contact {
+        padding: 1em;
+    }
+}
+
+    </style>
 </head>
 <body>
     <!-- Cookie Consent -->
@@ -170,6 +425,18 @@
         <p>&copy; 2024 Donna Luisa. Tutti i diritti riservati.</p>
     </footer>
 
-    <script src="./scripts.js"></script>
+    <!-- <script src="./scripts.js"></script> -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Cookie consent logic
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptCookiesButton = document.getElementById('acceptCookies');
+    
+    acceptCookiesButton.addEventListener('click', function() {
+        cookieConsent.style.display = 'none';
+        // Implement cookie setting logic here
+    });
+
+     </script>
 </body>
 </html>
