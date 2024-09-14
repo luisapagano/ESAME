@@ -4,263 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donna Luisa</title>
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: #000;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    background-color: #800000;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.motto {
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.carousel-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.carousel {
-    display: flex;
-    width: 200%; /* Adjust based on the number of images */
-    height: 100%;
-    animation: scroll 16s linear infinite;
-}
-
-.carousel img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%); /* Change based on the width of the carousel */
-    }
-}
-
-#about, #services, #contact {
-    padding: 2em;
-    background-color: #800000;
-    margin: 1em 0;
-}
-
-.service {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 1%;
-    position: relative;
-}
-
-.service-overlay {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-}
-
-.service img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.service .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.service:hover .overlay {
-    opacity: 1;
-}
-
-#contact .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-info, .contact-form {
-    width: 100%;
-    text-align: center;
-    margin: 1% 0;
-}
-
-.contact-info p {
-    margin: 0.5em 0;
-}
-
-.map {
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    margin: 1% 0;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-}
-
-footer {
-    background-color: #800000;
-    text-align: center;
-    padding: 1em 0;
-}
-
-.social-media a {
-    margin: 0 1em;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-#cookieConsent {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-    .service {
-        width: 45%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-container {
-        height: 200px;
-    }
-
-    .carousel img {
-        height: 200px;
-    }
-
-    .map {
-        height: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .service {
-        width: 100%;
-    }
-
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .map {
-        height: 300px;
-    }
-
-    .carousel-container {
-        height: 150px;
-    }
-
-    .carousel img {
-        height: 150px;
-    }
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-container {
-        height: 120px;
-    }
-
-    .carousel img {
-        height: 120px;
-    }
-
-    .map {
-        height: 200px;
-    }
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .motto {
-        font-size: 1em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about, #services, #contact {
-        padding: 1em;
-    }
-}
-
-    </style>
 </head>
 <body>
     <!-- Cookie Consent -->
@@ -268,22 +13,27 @@ footer {
         Questo sito utilizza i cookie. <button id="acceptCookies">Accetta</button>
     </div>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="https://i.pinimg.com/736x/ff/a1/e7/ffa1e7c65683e4795ac4cc218365f30b.jpg" alt="Donna Luisa Logo">
-        </div>
-        <div class="motto"><i>Eleganza e Stile per Ogni Donna</i></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Siamo</a></li>
-                <li><a href="#services">Servizi</a></li>
-                <li><a href="#gallery">Galleria</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Hamburger Menu Icon -->
+<div class="hamburger-menu">
+    <i class="fas fa-bars"></i>
+</div>
+
+<!-- Header -->
+<header>
+   <div class="logo-container">
+    <img src="percorso/del/logo.png" alt="Logo Donna Luisa">
+</div>
+    <div class="motto"><i>Eleganza e Stile per Ogni Donna</i></div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Chi Siamo</a></li>
+            <li><a href="#services">Servizi</a></li>
+            <li><a href="#gallery">Galleria</a></li>
+            <li><a href="#contact">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
 
     <!-- Home Section with Carousel -->
     <section id="home">
@@ -317,103 +67,93 @@ footer {
     </section>
 
     <!-- Services Section -->
-    <section id="services">
-        <div class="service">
-            <div class="service-overlay">
-                <img src="https://i.pinimg.com/564x/90/20/b1/9020b1a316f7ab528ffade74e9dd507c.jpg" alt="Consulenza">
-                <div class="overlay">
-                    <h3>Consulenza</h3>
-                    <p>Appuntamenti personalizzati con i clienti, per conoscersi e dare vita alle idee.</p>
-                </div>
+<section id="services">
+    <h2 class="section-title-services">SCOPRI I NOSTRI SERVIZI</h2>
+    <div class="service">
+        <div class="service-overlay">
+            <img src="https://i.pinimg.com/564x/90/20/b1/9020b1a316f7ab528ffade74e9dd507c.jpg" alt="Consulenza">
+            <div class="overlay">
+                <h3>Consulenza</h3>
+                <p>Appuntamenti personalizzati con i clienti, per conoscersi e dare vita alle idee.</p>
             </div>
         </div>
-        <div class="service">
-            <div class="service-overlay">
-                <img src="https://i.pinimg.com/736x/f9/11/fa/f911fa31d65ef23dae77b22ea0464d6a.jpg" alt="Progettazione">
-                <div class="overlay">
-                    <h3>Progettazione</h3>
-                    <p>Studio del prototipo e disegno finale del capo, tenendo in cosiderazione le richieste del cliente e le scelte stilistiche stabilite .</p>
-                </div>
+    </div>
+    <div class="service">
+        <div class="service-overlay">
+            <img src="https://i.pinimg.com/736x/f9/11/fa/f911fa31d65ef23dae77b22ea0464d6a.jpg" alt="Progettazione">
+            <div class="overlay">
+                <h3>Progettazione</h3>
+                <p>Studio del prototipo e disegno del capo, tenendo in considerazione le richieste del cliente e le scelte stilistiche stabilite.</p>
             </div>
         </div>
-        <div class="service">
-            <div class="service-overlay">
-                <img src="https://i.pinimg.com/564x/25/da/8e/25da8ef954f87f9f90e55323a8741cee.jpg" alt="Confezione">
-                <div class="overlay">
-                    <h3>Confezione</h3>
-                    <p>Confezione del capo finale. Prove misura e rifinuture dettagli del capo.</p>
-                </div>
+    </div>
+    <div class="service">
+        <div class="service-overlay">
+            <img src="https://i.pinimg.com/564x/25/da/8e/25da8ef954f87f9f90e55323a8741cee.jpg" alt="Confezione">
+            <div class="overlay">
+                <h3>Confezione</h3>
+                <p>Confezione del capo finale. Prove misura e rifinuture dettagli del capo.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Galleria prodotti</h2>
-        <div class="carousel-container">
-            <div class="carousel">
-                <img src="https://i.pinimg.com/564x/42/dc/82/42dc82ae6c7d879bc6c28cd8ae3902ce.jpg
-" alt="Gallery Image 1">
-                <img src="https://i.pinimg.com/564x/70/da/5b/70da5b67e8dda473f5a0e90b743878b8.jpg
-" alt="Gallery Image 2">
-                <img src="https://i.pinimg.com/736x/35/df/f3/35dff36c5871b7c53de7d41d1cbfba0f.jpg
-" alt="Gallery Image 3">
-                <img src="https://i.pinimg.com/564x/c4/0f/17/c40f177cac7d40e99673bc2e404b7e26.jpg
-" alt="Gallery Image 4">
-                <img src="https://i.pinimg.com/564x/2a/3e/a9/2a3ea98953b09b53dc93829cdd5e7335.jpg
-" alt="Gallery Image 5">
-                <img src="https://i.pinimg.com/736x/a8/f5/df/a8f5df81a5b4521373bd14d05b4bd91d.jpg
-" alt="Gallery Image 6">
-                <img src="https://i.pinimg.com/564x/1a/db/60/1adb60454a617de999c64ebadd87b1bd.jpg
-" alt="Gallery Image 7">
-                <img src="https://i.pinimg.com/564x/7a/5c/95/7a5c9589c6f36e75438fb512db32453d.jpg
-" alt="Gallery Image 8">
-                <!-- Cloned Images for Infinite Scroll Effect -->
-                <img src="https://i.pinimg.com/564x/42/dc/82/42dc82ae6c7d879bc6c28cd8ae3902ce.jpg
-" alt="Gallery Image 1">
-                <img src="https://i.pinimg.com/564x/70/da/5b/70da5b67e8dda473f5a0e90b743878b8.jpg
-" alt="Gallery Image 2">
-                <img src="https://i.pinimg.com/736x/35/df/f3/35dff36c5871b7c53de7d41d1cbfba0f.jpg
-" alt="Gallery Image 3">
-                <img src="https://i.pinimg.com/564x/c4/0f/17/c40f177cac7d40e99673bc2e404b7e26.jpg
-" alt="Gallery Image 4">
-                <img src="https://i.pinimg.com/564x/2a/3e/a9/2a3ea98953b09b53dc93829cdd5e7335.jpg
-" alt="Gallery Image 5">
-                <img src="https://i.pinimg.com/736x/a8/f5/df/a8f5df81a5b4521373bd14d05b4bd91d.jpg
-" alt="Gallery Image 6">
-                <img src="https://i.pinimg.com/564x/1a/db/60/1adb60454a617de999c64ebadd87b1bd.jpg
-" alt="Gallery Image 7">
-                <img src="https://i.pinimg.com/564x/7a/5c/95/7a5c9589c6f36e75438fb512db32453d.jpg
-" alt="Gallery Image 8">
-            </div>
-        </div>
-    </section>
+<section id="gallery">
+    <h2>Galleria Prodotti</h2>
+    <div class="gallery-grid">
+        <img src="https://i.pinimg.com/564x/42/dc/82/42dc82ae6c7d879bc6c28cd8ae3902ce.jpg" alt="Gallery Image 1">
+        <img src="https://i.pinimg.com/564x/70/da/5b/70da5b67e8dda473f5a0e90b743878b8.jpg" alt="Gallery Image 2">
+        <img src="https://i.pinimg.com/736x/35/df/f3/35dff36c5871b7c53de7d41d1cbfba0f.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="gallery-grid">
+        <img src="https://i.pinimg.com/564x/42/dc/82/42dc82ae6c7d879bc6c28cd8ae3902ce.jpg" alt="Gallery Image 4">
+        <img src="https://i.pinimg.com/564x/70/da/5b/70da5b67e8dda473f5a0e90b743878b8.jpg" alt="Gallery Image 5">
+        <img src="https://i.pinimg.com/736x/35/df/f3/35dff36c5871b7c53de7d41d1cbfba0f.jpg" alt="Gallery Image 6">
+    </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-container">
-            <div class="contact-info">
-                <p>Telefono: 380-264-3144</p>
-                <p>Email: info@donnaluisa.com</p>
-                <p>Indirizzo: Via Asti 30</p>
-            </div>
-            <div class="map">
-                <!-- Mappa incorporata -->
-                <iframe src="https://maps.google.com/maps?q=via%20asti%2030&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-            </div>
-            <div class="contact-form">
-                <form>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="message">Messaggio:</label>
-                    <textarea id="message" name="message"></textarea>
-                    <button type="submit">Invia</button>
-                </form>
-            </div>
+<section id="contact">
+    <h2>CONTATTACI</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><strong>Telefono:</strong> 380-264-3144</p>
+            <p><strong>Email:</strong> info@donnaluisa.com</p>
         </div>
-    </section>
+        <div class="contact-form">
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- New 'Dove Trovarci' Section -->
+<section id="dove-trovarci">
+    <h2>Dove Trovarci</h2>
+    <div class="map">
+        <iframe 
+            src="https://maps.google.com/maps?q=Asti,%20Italy&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" 
+            height="450" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0">
+        </iframe>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -425,19 +165,6 @@ footer {
         <p>&copy; 2024 Donna Luisa. Tutti i diritti riservati.</p>
     </footer>
 
-    <!-- <script src="./scripts.js"></script> -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Cookie consent logic
-            const cookieConsent = document.getElementById('cookieConsent');
-            const acceptCookiesButton = document.getElementById('acceptCookies');
-            
-            acceptCookiesButton.addEventListener('click', function() {
-                cookieConsent.style.display = 'none';
-                // Implement cookie setting logic here
-            });
-        });
-    </script>
-    
+    <script src="scripts.js"></script>
 </body>
 </html>
