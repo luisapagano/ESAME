@@ -7,3 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieConsent.style.display = 'none';
         // Implement cookie setting logic here
     });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger menu toggle logic
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('nav.main-nav ul');
+
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+});
+
+  
