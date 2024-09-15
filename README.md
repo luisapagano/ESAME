@@ -6,4 +6,4 @@ Terzo anno - Fashion Design.
 Docente Matteo Baccan - Web design.
 Realizzazione del mio sito personale di abbigliamento su misura chiamato "Donna Luisa".
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/62f930e0-f493-4c25-9280-91ccd00582ce/deploy-status)](https://app.netlify.com/sites/sitodonnaluisa/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37a756ae-7137-488b-9690-f8ffa6d2675a/deploy-status)](https://app.netlify.com/sites/sitodonnaluisa/deploys)
