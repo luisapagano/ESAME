@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<script src="scripts.js"></script>
+
 <body>
     <!-- Cookie Consent -->
     <div id="cookieConsent">
@@ -14,26 +17,26 @@
     </div>
 
     <!-- Hamburger Menu Icon -->
-<div class="hamburger-menu">
-    <i class="fas fa-bars"></i>
-</div>
+    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu(event)">
+        <i class="fas fa-bars"></i>
+    </div>
 
-<!-- Header -->
-<header>
-   <div class="logo-container">
-    <img src="https://i.pinimg.com/736x/ff/a1/e7/ffa1e7c65683e4795ac4cc218365f30b.jpg" alt="Logo Donna Luisa">
-</div>
-    <div class="motto"><i>Eleganza e Stile per Ogni Donna</i></div>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Chi Sono</a></li>
-            <li><a href="#services">Servizi</a></li>
-            <li><a href="#gallery">Galleria</a></li>
-            <li><a href="#contact">Contatti</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/736x/ff/a1/e7/ffa1e7c65683e4795ac4cc218365f30b.jpg" alt="Logo Donna Luisa">
+        </div>
+        <div class="motto"><i>Eleganza e Stile per Ogni Donna</i></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi Sono</a></li>
+                <li><a href="#services">Servizi</a></li>
+                <li><a href="#gallery">Galleria</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Home Section with Carousel -->
     <section id="home">
@@ -63,103 +66,105 @@
     <!-- About Section -->
     <section id="about">
         <h2>Donna Luisa</h2>
-        <p>Mi chiamo Luisa Pagano e sono una laureanda in Fashion Design, presso l'Accademia di Belle Arti di Novara. Grazie al corso di Web Design, seguito durante l'ultimo anno, ho realizzato il mio primo sito personale d'abbigliamento chiamato Donna Luisa. L'obiettivo è quello di realizzare e far conoscere il mio brand di capi d'abbigliamento realizzati su misura del cliente.</p>
+        <p>Mi chiamo Luisa Pagano e sono una laureanda in Fashion Design, presso l'Accademia di Belle Arti di Novara.
+            Grazie al corso di Web Design, seguito durante l'ultimo anno, ho realizzato il mio primo sito personale
+            d'abbigliamento chiamato Donna Luisa. L'obiettivo è quello di realizzare e far conoscere il mio brand di
+            capi d'abbigliamento realizzati su misura del cliente.</p>
     </section>
 
     <!-- Services Section -->
-<section id="services">
-    <h2 class="section-title-services">SCOPRI I SERVIZI</h2>
-    <div class="service">
-        <div class="service-overlay">
-            <img src="https://i.pinimg.com/564x/90/20/b1/9020b1a316f7ab528ffade74e9dd507c.jpg" alt="Consulenza">
-            <div class="overlay">
-                <h3>Consulenza</h3>
-                <p>Appuntamenti personalizzati con i clienti, per conoscersi e dare vita alle idee.</p>
+    <section id="services">
+        <h2 class="section-title-services">SCOPRI I SERVIZI</h2>
+        <div class="services_data">
+            <div class="service">
+                <div class="service-overlay">
+                    <img src="https://i.pinimg.com/564x/90/20/b1/9020b1a316f7ab528ffade74e9dd507c.jpg" alt="Consulenza">
+                    <div>
+                        <h3>Consulenza</h3>
+                        <p>Appuntamenti personalizzati con i clienti, per conoscersi e dare vita alle idee.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-overlay">
+                    <img src="https://i.pinimg.com/736x/f9/11/fa/f911fa31d65ef23dae77b22ea0464d6a.jpg"
+                        alt="Progettazione">
+                    <div>
+                        <h3>Progettazione</h3>
+                        <p>Studio del prototipo e disegno del capo, tenendo in considerazione le richieste del cliente e
+                            le
+                            scelte stilistiche stabilite.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <img src="https://i.pinimg.com/564x/25/da/8e/25da8ef954f87f9f90e55323a8741cee.jpg" alt="Confezione">
+                    <div class="overlay">
+                        <h3>Confezione</h3>
+                        <p>Confezione del capo finale. Prove misura e rifinuture dettagli del capo.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="service">
-        <div class="service-overlay">
-            <img src="https://i.pinimg.com/736x/f9/11/fa/f911fa31d65ef23dae77b22ea0464d6a.jpg" alt="Progettazione">
-            <div class="overlay">
-                <h3>Progettazione</h3>
-                <p>Studio del prototipo e disegno del capo, tenendo in considerazione le richieste del cliente e le scelte stilistiche stabilite.</p>
-            </div>
-        </div>
-    </div>
-    <div class="service">
-        <div class="service-overlay">
-            <img src="https://i.pinimg.com/564x/25/da/8e/25da8ef954f87f9f90e55323a8741cee.jpg" alt="Confezione">
-            <div class="overlay">
-                <h3>Confezione</h3>
-                <p>Confezione del capo finale. Prove misura e rifinuture dettagli del capo.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Gallery Section -->
-<section id="gallery">
-    <h2>Galleria Prodotti</h2>
-    <div class="gallery-grid">
-        <img src="https://i.pinimg.com/564x/42/dc/82/42dc82ae6c7d879bc6c28cd8ae3902ce.jpg" alt="Gallery Image 1">
-        <img src="https://i.pinimg.com/564x/70/da/5b/70da5b67e8dda473f5a0e90b743878b8.jpg" alt="Gallery Image 2">
-        <img src="https://i.pinimg.com/564x/a4/26/02/a4260213493e802845e1828d716483e7.jpg" alt="Gallery Image 3">
-    </div>
-    <div class="gallery-grid">
-        <img src="https://i.pinimg.com/564x/8b/79/9b/8b799b0718b20483ae3f29f041c12f77.jpg" alt="Gallery Image 4">
-        <img src="https://i.pinimg.com/564x/7e/c0/cb/7ec0cbbb7e74c75b7423825707df3945.jpg" alt="Gallery Image 5">
-        <img src="https://i.pinimg.com/736x/35/df/f3/35dff36c5871b7c53de7d41d1cbfba0f.jpg" alt="Gallery Image 6">
-    </div>
-</section>
+    <section id="gallery">
+        <h2>Galleria Prodotti</h2>
+        <div class="gallery-grid">
+            <img src="https://i.pinimg.com/564x/42/dc/82/42dc82ae6c7d879bc6c28cd8ae3902ce.jpg" alt="Gallery Image 1">
+            <img src="https://i.pinimg.com/564x/70/da/5b/70da5b67e8dda473f5a0e90b743878b8.jpg" alt="Gallery Image 2">
+            <img src="https://i.pinimg.com/564x/a4/26/02/a4260213493e802845e1828d716483e7.jpg" alt="Gallery Image 3">
+
+
+            <img src="https://i.pinimg.com/564x/8b/79/9b/8b799b0718b20483ae3f29f041c12f77.jpg" alt="Gallery Image 4">
+            <img src="https://i.pinimg.com/564x/7e/c0/cb/7ec0cbbb7e74c75b7423825707df3945.jpg" alt="Gallery Image 5">
+            <img src="https://i.pinimg.com/736x/35/df/f3/35dff36c5871b7c53de7d41d1cbfba0f.jpg" alt="Gallery Image 6">
+        </div>
+    </section>
 
     <!-- Contact Section -->
-<section id="contact">
-    <h2>CONTATTAMI</h2>
-    <div class="contact-container">
-        <div class="contact-info">
-            <p><strong>Telefono:</strong> 380-264-3144</p>
-            <p><strong>Email:</strong> info@donnaluisa.com</p>
-        </div>
-        <div class="contact-form">
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Messaggio:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Invia</button>
-            </form>
-        </div>
-    </div>
-</section>
+    <section id="contact">
+        <h2>CONTATTAMI</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Telefono:</strong> 380-264-3144</p>
+                <p><strong>Email:</strong> info@donnaluisa.com</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
 
-<!-- New 'Dove Trovarmi' Section -->
-<section id="dove-trovarci">
-    <h2>Dove Trovarmi</h2>
-    <div class="map">
-        <iframe 
-            src="https://maps.google.com/maps?q=Asti,%20Italy&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%" 
-            height="450" 
-            frameborder="0" 
-            style="border:0;" 
-            allowfullscreen="" 
-            aria-hidden="false" 
-            tabindex="0">
-        </iframe>
-    </div>
-</section>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- New 'Dove Trovarmi' Section -->
+    <section id="dove-trovarci">
+        <h2>Dove Trovarmi</h2>
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=Asti,%20Italy&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+                height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="social-media">
             <a href="https://www.instagram.com/_luisapagano/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@luisapag29?_t=8oCoC8i6e80&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@luisapag29?_t=8oCoC8i6e80&_r=1" target="_blank"><i
+                    class="fab fa-tiktok"></i></a>
             <a href="https://it.pinterest.com/luisapagano901/" target="_blank"><i class="fab fa-pinterest"></i></a>
         </div>
         <p>&copy; 2024 Donna Luisa. Tutti i diritti riservati.</p>
@@ -167,4 +172,5 @@
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
